@@ -1,16 +1,35 @@
+@import url("./animations.css");
+
+* {
+  box-sizing: border-box;
+}
+
 .text {
   display: none;
 }
 
-/* .checkbox-container:has(> #pic1:checked) ~ .text-container .text-1 {
-  display: block;
-  color: blueviolet;
+.text-container {
+  order: 1;
 }
- */
+
+.checkbox-container {
+  order: 3;
+}
+
+.image-container {
+  width: 100%;
+  padding: 50px 20px;
+  order: 0;
+}
+
+.meme-image {
+  width: 100%;
+  height: 20px;
+}
 
 .checkbox-container:has(#pic1:checked) + .text-container .text-1 {
   display: block;
-  animation-name: example;
+  animation-name: textAnimation;
   animation-duration: 2s;
   color: blueviolet;
 }
@@ -29,7 +48,7 @@
 
 .checkbox-container:has(#pic2:checked) + .text-container .text-2 {
   display: block;
-  animation-name: example;
+  animation-name: textAnimation;
   animation-duration: 2s;
   color: blueviolet;
 }
@@ -48,7 +67,7 @@
 
 .checkbox-container:has(#pic3:checked) + .text-container .text-3 {
   display: block;
-  animation-name: example;
+  animation-name: textAnimation;
   animation-duration: 2s;
   color: blueviolet;
 }
@@ -67,7 +86,7 @@
 
 .checkbox-container:has(#pic4:checked) + .text-container .text-4 {
   display: block;
-  animation-name: example;
+  animation-name: textAnimation;
   animation-duration: 2s;
   color: blueviolet;
 }
@@ -84,11 +103,47 @@
   display: none;
 }
 
-@keyframes example {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.checkbox-container:has(#pic1:checked) ~ .image-container .meme-image {
+  background: url("/cssMemeSlider/assets/pic1.jpg") no-repeat center center;
+  background-size: contain;
+  padding-top: 56.25%;
+  aspect-ratio: 16/9;
+  width: 100%;
+  animation-name: pic1;
+  animation-duration: 2s;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-container:has(#pic2:checked) ~ .image-container .meme-image {
+  background: url("/cssMemeSlider/assets/pic2.jpg") no-repeat center center;
+  background-size: contain;
+  padding-top: 56.25%;
+  aspect-ratio: 16/9;
+  width: 100%;
+  animation-name: pic2;
+  animation-duration: 2s;
+}
+
+.checkbox-container:has(#pic3:checked) ~ .image-container .meme-image {
+  background: url("/cssMemeSlider/assets/pic3.jpg") no-repeat center center;
+  background-size: contain;
+  padding-top: 56.25%;
+  aspect-ratio: 16/9;
+  width: 100%;
+  animation-name: pic3;
+  animation-duration: 2s;
+}
+
+.checkbox-container:has(#pic4:checked) ~ .image-container .meme-image {
+  background: url("/cssMemeSlider/assets/pic4.jpg") no-repeat center center;
+  background-size: contain;
+  padding-top: 56.25%;
+  aspect-ratio: 16/9;
+  width: 100%;
+  animation-name: pic4;
+  animation-duration: 2s;
 }

@@ -187,7 +187,7 @@ label:active input:checked {
 }
 
 .checkbox-container:has(#pic1:checked) ~ .image-container .meme-image {
-  background: url("/cssMemeSlider/assets/meme1.jpg") no-repeat center center;
+  background: url("./assets/meme1.jpg") no-repeat center center;
   background-size: contain;
   padding-top: 75%;
   aspect-ratio: 4/3;
@@ -197,7 +197,7 @@ label:active input:checked {
 }
 
 .checkbox-container:has(#pic2:checked) ~ .image-container .meme-image {
-  background: url("/cssMemeSlider/assets/meme2.jpg") no-repeat center center;
+  background: url("/assets/meme2.jpg") no-repeat center center;
   background-size: contain;
   padding-top: 75%;
   aspect-ratio: 4/3;
@@ -207,7 +207,7 @@ label:active input:checked {
 }
 
 .checkbox-container:has(#pic3:checked) ~ .image-container .meme-image {
-  background: url("/cssMemeSlider/assets/meme3.jpg") no-repeat center center;
+  background: url("/assets/meme3.jpg") no-repeat center center;
   background-size: contain;
   padding-top: 75%;
   aspect-ratio: 4/3;
@@ -217,7 +217,7 @@ label:active input:checked {
 }
 
 .checkbox-container:has(#pic4:checked) ~ .image-container .meme-image {
-  background: url("/cssMemeSlider/assets/meme4.jpg") no-repeat center center;
+  background: url("./assets/meme4.jpg") no-repeat center center;
   background-size: contain;
   padding-top: 75%;
   aspect-ratio: 4/3;

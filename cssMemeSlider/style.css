@@ -103,7 +103,6 @@ label:active input:checked {
 
 .image-container {
   width: 100%;
-  padding: 0 1.25rem;
   order: 0;
 }
 
@@ -189,8 +188,8 @@ label:active input:checked {
 .checkbox-container:has(#pic1:checked) ~ .image-container .meme-image {
   background: url("./assets/meme1.jpg") no-repeat center center;
   background-size: contain;
-  padding-top: 75%;
-  aspect-ratio: 4/3;
+  padding-top: 56.25%;
+  aspect-ratio: 16/9;
   width: 100%;
   animation-name: pic1;
   animation-duration: 2s;
@@ -199,8 +198,8 @@ label:active input:checked {
 .checkbox-container:has(#pic2:checked) ~ .image-container .meme-image {
   background: url("./assets/meme2.jpg") no-repeat center center;
   background-size: contain;
-  padding-top: 75%;
-  aspect-ratio: 4/3;
+  padding-top: 56.25%;
+  aspect-ratio: 16/9;
   width: 100%;
   animation-name: pic2;
   animation-duration: 2s;
@@ -209,8 +208,8 @@ label:active input:checked {
 .checkbox-container:has(#pic3:checked) ~ .image-container .meme-image {
   background: url("./assets/meme3.jpg") no-repeat center center;
   background-size: contain;
-  padding-top: 75%;
-  aspect-ratio: 4/3;
+  padding-top: 56.25%;
+  aspect-ratio: 16/9;
   width: 100%;
   animation-name: pic3;
   animation-duration: 2s;
@@ -219,8 +218,8 @@ label:active input:checked {
 .checkbox-container:has(#pic4:checked) ~ .image-container .meme-image {
   background: url("./assets/meme4.jpg") no-repeat center center;
   background-size: contain;
-  padding-top: 75%;
-  aspect-ratio: 4/3;
+  padding-top: 56.25%;
+  aspect-ratio: 16/9;
   width: 100%;
   animation-name: pic4;
   animation-duration: 2s;

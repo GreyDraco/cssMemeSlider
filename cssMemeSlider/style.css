@@ -4,6 +4,29 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 20px;
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .text {
   display: none;
 }
@@ -18,13 +41,14 @@
 
 .image-container {
   width: 100%;
-  padding: 50px 20px;
+  padding: 0, 20px;
   order: 0;
 }
 
 .meme-image {
   width: 100%;
   height: 20px;
+  border-radius: 9px;
 }
 
 .checkbox-container:has(#pic1:checked) + .text-container .text-1 {
@@ -104,45 +128,40 @@
 }
 
 .checkbox-container:has(#pic1:checked) ~ .image-container .meme-image {
-  background: url("/cssMemeSlider/assets/pic1.jpg") no-repeat center center;
+  background: url("/cssMemeSlider/assets/meme1.jpg") no-repeat center center;
   background-size: contain;
-  padding-top: 56.25%;
-  aspect-ratio: 16/9;
+  padding-top: 75%;
+  aspect-ratio: 4/3;
   width: 100%;
   animation-name: pic1;
   animation-duration: 2s;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .checkbox-container:has(#pic2:checked) ~ .image-container .meme-image {
-  background: url("/cssMemeSlider/assets/pic2.jpg") no-repeat center center;
+  background: url("/cssMemeSlider/assets/meme2.jpg") no-repeat center center;
   background-size: contain;
-  padding-top: 56.25%;
-  aspect-ratio: 16/9;
+  padding-top: 75%;
+  aspect-ratio: 4/3;
   width: 100%;
   animation-name: pic2;
   animation-duration: 2s;
 }
 
 .checkbox-container:has(#pic3:checked) ~ .image-container .meme-image {
-  background: url("/cssMemeSlider/assets/pic3.jpg") no-repeat center center;
+  background: url("/cssMemeSlider/assets/meme3.jpg") no-repeat center center;
   background-size: contain;
-  padding-top: 56.25%;
-  aspect-ratio: 16/9;
+  padding-top: 75%;
+  aspect-ratio: 4/3;
   width: 100%;
   animation-name: pic3;
   animation-duration: 2s;
 }
 
 .checkbox-container:has(#pic4:checked) ~ .image-container .meme-image {
-  background: url("/cssMemeSlider/assets/pic4.jpg") no-repeat center center;
+  background: url("/cssMemeSlider/assets/meme4.jpg") no-repeat center center;
   background-size: contain;
-  padding-top: 56.25%;
-  aspect-ratio: 16/9;
+  padding-top: 75%;
+  aspect-ratio: 4/3;
   width: 100%;
   animation-name: pic4;
   animation-duration: 2s;

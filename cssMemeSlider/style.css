@@ -17,18 +17,39 @@ body {
 
 .wrapper {
   width: 100%;
-  padding: 0 20px;
-  max-width: 1024px;
+  padding: 0 1.2rem;
+  max-width: 64rem;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.2rem;
+}
+
+.checkbox-container {
+  display: flex;
+  gap: 0.25rem;
 }
 
 .text {
   display: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+label,
+input {
+  cursor: pointer;
+}
+
+label {
+  width: 1.5rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .text-container {
@@ -41,21 +62,20 @@ body {
 
 .image-container {
   width: 100%;
-  padding: 0, 20px;
+  padding: 0, 1.25rem;
   order: 0;
 }
 
 .meme-image {
   width: 100%;
-  height: 20px;
-  border-radius: 9px;
+  height: 1.25rem;
+  border-radius: 0.5rem;
 }
 
 .checkbox-container:has(#pic1:checked) + .text-container .text-1 {
   display: block;
   animation-name: textAnimation;
   animation-duration: 2s;
-  color: blueviolet;
 }
 
 .checkbox-container:has(#pic2:checked) + .text-container .text-1 {
@@ -74,7 +94,6 @@ body {
   display: block;
   animation-name: textAnimation;
   animation-duration: 2s;
-  color: blueviolet;
 }
 
 .checkbox-container:has(#pic1:checked) + .text-container .text-2 {
@@ -93,7 +112,6 @@ body {
   display: block;
   animation-name: textAnimation;
   animation-duration: 2s;
-  color: blueviolet;
 }
 
 .checkbox-container:has(#pic1:checked) + .text-container .text-3 {
@@ -112,7 +130,6 @@ body {
   display: block;
   animation-name: textAnimation;
   animation-duration: 2s;
-  color: blueviolet;
 }
 
 .checkbox-container:has(#pic1:checked) + .text-container .text-4 {
@@ -165,4 +182,22 @@ body {
   width: 100%;
   animation-name: pic4;
   animation-duration: 2s;
+}
+
+@media (max-width: 56rem) {
+  .text-container {
+    order: 3;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .checkbox-container {
+    order: 1;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
 }
